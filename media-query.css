@@ -104,6 +104,9 @@
     }
 }
 @media (max-width: 768px){
+    .hero-section .container{
+        margin-top: 50px !important;
+    }
     .hero-section .hero-section-greeting{
         width: 93vw;
         margin: -290px 0 0 8vw;
@@ -127,6 +130,10 @@
     .hero-section .hero-section-card{
         margin: -60px 0 0 8vw !important;
         width: 90vw !important;
+    }
+    .awards-section .award-image{
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
     }
 }
 @media (max-width: 706px){
