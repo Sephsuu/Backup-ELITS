@@ -1,0 +1,245 @@
+:root{
+    --primary: #F18700;
+    --secondary: #3C4142;
+    --tertiary: #fff;
+    --primary-shadow: rgba(211, 123, 0, 0.596);
+    --secondary-outline: #000;
+    --dark-primary: rgb(234, 152, 0);
+}
+
+@media (max-width: 1399px){
+    .hero-section .container{
+        margin-left: 30px;
+    }
+}
+@media (max-width: 1245px){
+    .hero-section .container{
+        margin-left: 8px;
+    }
+}
+@media (max-width: 1215px){
+    .hero-section .container{
+        margin-left: 0;
+    }
+}
+@media (max-width: 1200px){
+    .hero-section-card{
+        margin-bottom: 95px;
+    }
+    .hero-section-card .card-title{
+        font-size: 18px !important;
+    }
+
+}
+@media (max-width: 1138px){
+    .navbar-nav{
+        margin-left: 20px;
+    }
+    .nav-item{
+        margin: 0 15px 0 15px;
+    }
+    
+}
+@media (max-width: 1050px){
+    .hero-section .container{
+        margin-left: -40px;
+    }
+}
+@media (max-width: 1042px){
+    .navbar-nav{
+        margin-left: 50px;
+    }
+    .nav-item{
+        margin: 0 3px 0 3px;
+    }
+}
+@media (max-width: 992px){
+    .hero-section-card{
+        margin-bottom: 110px;
+        width: 60%;
+    }
+    .hero-section-card .card-body{
+        margin: 20px !important;
+    }
+    .hero-section-card .card-title{
+        font-size: 16px !important;
+    }
+    .hero-section .card-content .create-account-btn{
+        font-size: 12px !important;
+    }
+}
+@media (max-width: 870px){
+    .hero-section .elits-member{
+        margin: 10px 0 0 85px;
+        width: 280px;
+    }
+    .hero-section .hero-section-greeting{
+        position: absolute;
+        margin: -440px 0 0 330px;
+    }
+    .hero-section-card{
+        margin: -220px 0 0 330px;
+    }
+    .hero-section .container{
+        margin-left: -60px;
+    }
+    .hero-section .card-content{
+        margin: 20px !important;
+    }
+}
+@media (max-width: 834px){
+    .hero-section-greeting p{
+        font-size: 14px;
+    }
+    .hero-section-greeting h1{
+        font-size: 26px;
+    }
+}
+@media (max-width: 774px){
+    .hero-section-greeting input{
+        margin-top: 20px !important;
+    }
+    .hero-section-card{
+        margin: -200px 0 0 330px;
+    }
+}
+@media (max-width: 768px){
+    .hero-section .hero-section-greeting{
+        width: 93vw;
+        margin: -290px 0 0 8vw;
+    }
+    .hero-section .hero-section-greeting p{
+        width: 70%;
+        font-size: 12px;
+    }
+    .hero-section .hero-section-greeting h1{
+        width: 70%;
+        font-size: 24px;
+    }
+    .hero-section .elits-member{
+        width: 200px;
+        margin: 20px 0 0 75vw;
+    }
+    .hero-section-greeting input{
+        width: 93vw !important;
+        justify-content: center;
+    }
+    .hero-section .hero-section-card{
+        margin: -60px 0 0 8vw !important;
+        width: 90vw !important;
+    }
+}
+@media (max-width: 706px){
+    .hero-section .hero-section-card{
+        width: 92vw !important;
+    }
+}
+@media (max-width: 679px){
+    .hero-section .hero-section-card{
+        width: 92vw !important;
+    }
+}
+@media (max-width: 654px){
+    .hero-section .elits-member{
+        width: 200px;
+        margin: 20px 0 0 70vw;
+    }
+}
+@media (max-width: 603px){
+    .hero-section .hero-section-greeting{
+        margin: -290px 0 0 10vw;
+    }
+    .hero-section .hero-section-greeting p{
+        width: 70%;
+        font-size: 10px;
+    }
+    .hero-section .hero-section-greeting h1{
+        width: 70%;
+        font-size: 22px;
+    }
+    .hero-section-greeting input{
+        width: 91vw !important;
+    }
+    .hero-section .hero-section-card{
+        margin: -80px 0 0 10vw !important;
+        width: 90vw !important;
+    }
+}
+@media (max-width: 547px){
+    .navbar-brand-lg{
+        display: none;
+    }
+    .navbar-brand-sm{
+        display: block;
+    }
+    .elits-logo{
+        width: 20px;
+    }
+    .hero-section .hero-section-greeting{
+        margin: -290px 0 0 12vw;
+        text-align: inherit;
+    }
+    .hero-section .hero-section-card{
+        margin: -80px 0 0 12vw !important;
+    }
+    .hero-section .elits-member{
+        margin: 20px 0 0 63vw;
+    }
+}
+@media (max-width: 444px){
+    .hero-section .hero-section-greeting{
+        margin: -320px 0 0 12vw;
+    }
+    .hero-section .elits-member{
+        margin: 20px 0 0 60vw;
+    }
+}
+@media (max-width: 409px){
+    .hero-section .hero-section-greeting .section-greeting-lg{
+        display: none;
+    }
+    .hero-section .hero-section-greeting .section-greeting-sm{
+        display: block;
+        font-size: 10px;
+    }
+    .hero-section .hero-section-greeting h1{
+        font-size: 20px;
+    }
+    .hero-section .hero-section-greeting input{
+        font-size: 14px;
+    }
+    .hero-section .elits-member{
+        margin: 20px 0 0 58vw;
+    }
+}
+@media (max-width: 386px){
+    .hero-section .hero-section-greeting{
+        margin-top: -290px;
+    }
+    .hero-section .hero-section-greeting h1{
+        font-size: 18px;
+    }
+    .hero-section .hero-section-greeting input{
+        font-size: 12px;
+    }
+    .hero-section-card .card-title{
+        font-size: 14px !important;
+    }
+    .hero-section .card-content .create-account-btn{
+        font-size: 10px !important;
+    }
+    .hero-section .elits-member{
+        width: 180px;
+    }
+}
+@media (max-width: 356px){
+    .hero-section-greeting{
+
+    }
+    .hero-section-card{
+        margin-left: 70vw;
+    }
+    .hero-section .hero-section-greeting h1{
+        font-size: 16px;
+    }
+}

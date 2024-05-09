@@ -10,16 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
     <title>ELITS - CvSU Indang Campus</title>
     <link rel="icon" type="image/png" href="images/elits-logo.png">
 </head>
 <body>
 
 <!-- NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light custom-shadow sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light custom-shadow sticky-top" id="nav">
       <a href="#"><img src="images/elits-logo.png" width="30px" class="navbar-brand img-fluid elits-logo"></a>
-      <a class="navbar-brand text-lg" href="#"><span>Elite League of Information Technology Students</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand text-lg navbar-brand-lg" href="#"><span>Elite League of Information Technology Students</span></a>
+      <a class="navbar-brand text-lg navbar-brand-sm" href="#"><span>ELITS</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -50,26 +52,29 @@
 <!-- HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION -->
     <div class="hero-section container-fluid">
         <div class="container">
-            <img src="images/elts-president.png" class="img-fluid elits-member" width="300px">
+            <img src="images/elits-1st-year-rep.png" class="img-fluid elits-member">
             <div class="hero-section-greeting">
-                <p>Elite League of Information Technology Students</p>
+                <p class="section-greeting-lg">Elite League of Information Technology Students</p>
+                <p class="section-greeting-sm">ELITS CvSU - Main Campus</p>
                 <h1 class="text-sm">The official website of ELITS, a school organization for <span>BSIT students at Cavite State University</span>.</h1>
                 <input type="text" class="form-control mt-4" placeholder="Search for a content">
             </div>
             <div class="hero-section-card">
                 <div class="card">
-                    <div class="card-body m-4">
-                        <div class="row">
+                    <!-- <div class="card-body"> -->
+                        <div class="row m-5 card-content">
                             <div class="col-8">
                                 <p class="card-title">Become an ELITS member by <b>creating an account</b>.</p>
-                                <a href="#" class="btn btn-light mt-2"><span>Create Account</span></a>
+                                <a href="#" class="btn btn-light mt-2 mt-sm-0 create-account-btn"><span>Create Account</span></a>
                             </div>
                             <div class="col-4">
-                                <img src="images/elits-logo.png" class="img-fluid elits-logo" width="80px">
+                              <a href="">
+                                <img src="images/elits-dp.jpg" class="img-fluid elits-dp" width="80px">
+                              </a>
                             </div>
                         </div>
                         
-                    </div>
+                    <!-- </div> -->
                   </div>
             </div>
         </div>
@@ -77,7 +82,7 @@
     </div>
 
 <!-- HISTORY SECTION HISTORY SECTION HISTORY SECTION HISTORY SECTION HISTORY SECTION HISTORY SECTION HISTORY SECTION HISTORY SECTION HISTORY SECTION -->
-    <div class="history-section container-fluid text-center">
+    <div class="history-section container-fluid text-center" id="history-section">
         <div class="container pt-5">
             <h1>ELITS History</h1><hr style="color: white; outline: 1px solid white;">
             <p class="history-statement">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente laborum voluptas ipsa voluptates, quaerat delectus veniam alias perspiciatis numquam. Facere nobis maxime debitis dolores quidem odit cupiditate commodi iure numquam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae magnam mollitia, earum culpa adipisci iusto sunt temporibus suscipit deserunt, doloremque dicta nesciunt! Odit corrupti laborum quia ipsa quo maxime quisquam.</p>
@@ -124,6 +129,7 @@
 
 <!-- AWARDS SECTION AWARDS SECTION AWARDS SECTION AWARDS SECTION AWARDS SECTION AWARDS SECTION AWARDS SECTION AWARDS SECTION AWARDS SECTION -->
     <div class="awards-section container-fluid">
+      <center>
       <div class="container">
         <h1 class="pt-5 text-center">List of ELITS Awards</h1><hr style="color: white; outline: 1px solid black;">
           <div class="row mt-4">
@@ -239,6 +245,7 @@
             </div>
           </div>
       </div>
+      </center>
 
       <div class="modal" id="award" tabindex="-1">
         <div class="modal-dialog">
@@ -265,10 +272,10 @@
       <div class="container">
         <h1 class="pt-5 text-center">Latest News Update</h1><hr style="color: white; outline: 1.3px solid white;">
         <div class="row mt-4">
-          <div class="col-4 d-flex justify-content-center">
+          <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
             <img src="images/elits-membership.jpg" class="img-fluid news-image m-2">
           </div>
-          <div class="col-8">
+          <div class="col-lg-8 col-sm-12">
             <div class="news-title">
               <h4 class="mt-4">ELITS Membership</h4>
             </div>
@@ -279,10 +286,10 @@
           </div>
         </div>
         <div class="row mt-4">
-          <div class="col-4 d-flex justify-content-center">
+          <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
             <img src="images/elits-merch.jpg" class="img-fluid news-image m-2">
           </div>
-          <div class="col-8">
+          <div class="col-lg-8 col-sm-12">
             <div class="news-title">
               <h4 class="mt-4">ELITS Merchandise Released</h4>
             </div>
@@ -293,10 +300,10 @@
           </div>
         </div>
         <div class="row mt-4">
-          <div class="col-4 d-flex justify-content-center">
+          <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
             <img src="images/looking-for-support-council.jpg" class="img-fluid news-image m-2">
           </div>
-          <div class="col-8">
+          <div class="col-lg-8 col-sm-12">
             <div class="news-title">
               <h4 class="mt-4">ELITS: Looking for Support Council</h4>
             </div>
@@ -585,10 +592,10 @@
       <div class="container">
         <h1 class="pt-5 text-center">Latest Events</h1><hr style="color: white; outline: 1.3px solid white;">
         <div class="row mt-4">
-          <div class="col-4 d-flex justify-content-center">
+          <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
             <img src="images/elits-esport-tournament.jpg" class="img-fluid events-image m-2">
           </div>
-          <div class="col-8">
+          <div class="col-lg-8 col-sm-12">
             <div class="events-title">
               <h4 class="mt-4">ELITS E-sports Tournament</h4>
             </div>
@@ -599,10 +606,10 @@
           </div>
         </div>
         <div class="row mt-4">
-          <div class="col-4 d-flex justify-content-center">
+          <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
             <img src="images/lanyard-making-contest.jpg" class="img-fluid events-image m-2">
           </div>
-          <div class="col-8">
+          <div class="col-lg-8 col-sm-12">
             <div class="events-title">
               <h4 class="mt-4">Lanyard Making Contest</h4>
             </div>
@@ -613,10 +620,10 @@
           </div>
         </div>
         <div class="row mt-4">
-          <div class="col-4 d-flex justify-content-center">
+          <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
             <img src="images/spooky-brainy-doo.jpg" class="img-fluid events-image m-2">
           </div>
-          <div class="col-8">
+          <div class="col-lg-8 col-sm-12">
             <div class="events-title">
               <h4 class="mt-4">Spooky Brainy Doo</h4>
             </div>
@@ -925,10 +932,28 @@
  
     <section class="join-section container-fluid pt-5">
       <video autoplay muted loop class="videoplay">
-          <source src="/videos/join.mp4" type="video/mp4">
+          <source src="videos/join.mp4" type="video/mp4">
       </video>
-    </section>
+      <div class="vid-content text-center">
+        <h1 class="join-us">JOIN US</h1>
+        <h1 class="join-descrip pt-5">DESCRIPTION</h1>
+        <div class="container descrip-box mt-4 p-4">
+          <center>
+            <p class="py-2 w-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+               dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </center>
+        </div>
+        <h1 class="open-pos pt-5">OPEN POSITION</h1>
+        <div class="container open-positions mt-4 py-5">
+          <p> laman to </p>
+        </div>
+        <center>
+          <button class="join-btn p-4 mt-5">JOIN NOW</button>
+        </center>
 
+      </div>
+    </section>
 
 
 

@@ -1,5 +1,3 @@
-
-
 :root{
     --primary: #F18700;
     --secondary: #3C4142;
@@ -23,6 +21,9 @@
     font-weight: 400;
     color: var(--secondary);
     font-size: 18px !important;
+}
+.navbar-brand-sm{
+    display: none;
 }
 .navbar-nav{
     margin-left: 70px;
@@ -53,30 +54,13 @@
 .nav-link span:hover{
     color: var(--secondary);
 }
-@media (max-width: 1138px){
-    .navbar-nav{
-        margin-left: 20px;
-    }
-    .nav-item{
-        margin: 0 15px 0 15px;
-    }
-    
-}
-@media (max-width: 1042px){
-    .navbar-nav{
-        margin-left: 50px;
-    }
-    .nav-item{
-        margin: 0 3px 0 3px;
-    }
-}
-
 .hero-section{
     background: var(--tertiary);
     height: auto;
 }
 .elits-member{
     margin: 10px 0 0 80px;
+    width: 310px;
 }
 .hero-section-greeting{
     width: 55%;
@@ -89,6 +73,9 @@
     font-weight: 500;
     color: var(--secondary-outline);
     text-transform: uppercase;
+}
+.hero-section-greeting .section-greeting-sm{
+    display: none;
 }
 .hero-section-greeting h1{
     font-size: 28px;
@@ -115,28 +102,29 @@
     background-color: rgb(241, 153, 29);
     box-shadow: 0 3px 20px rgba(33, 33, 33, .18);
 }
-.card-body a{
+.hero-section .card-content .create-account-btn{
     outline: 1px solid var(--secondary-outline);
     color: var(--secondary) !important;
 }
-.card-body a:after{
+.hero-section .card-content .create-account-btn:after{
     background-color: var(--secondary) !important;
     outline: 1px solid var(--tertiary);
     color: var(--tertiary);
 }
-.card-body span:hover{
+.hero-section .card-content span:hover{
     color: var(--primary);
 }
-.hero-section-card .card .card-body p{
+.hero-section-card .card .card-content p{
     color: white;
     font-size: 24px;
 }
-.hero-section-card .card .elits-logo{
+.hero-section-card .card .elits-dp{
     background: var(--tertiary);
     padding: 10px;
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    object-fit: cover;
 }
 
 .history-section{
@@ -448,8 +436,9 @@
 .join-section {
     position: relative;
     width: 100%;
-    height: 100vh; /* Set height to 100% of the viewport height */
+    height: 200vh;
     overflow: hidden;
+
 }
 
 .videoplay {
@@ -458,5 +447,65 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video covers the entire container */
+    object-fit: cover;
+    z-index: -1;
+}
+
+.join-section .vid-content{
+    color: var(--primary);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.join-section .vid-content .join-us{
+    font-size: 60px;
+
+}
+
+.join-section .vid-content .join-descrip .open-pos {
+    font-size: 40px;
+}
+
+.join-section .vid-content p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--tertiary);
+}
+
+
+.join-section .vid-content .descrip-box{
+    background-color: var(--primary);
+    border-radius: 10px;
+}
+
+.join-section .vid-content .open-positions{
+    background-color: var(--primary);
+    border-radius: 10px;
+}
+
+
+.join-section .vid-content .join-btn{
+    background-color: var(--primary);
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+}
+
+.join-section .vid-content .join-btn:hover {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    font-weight: 500;
+}
+
+
+.join-section .vid-content .join-btn:active {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid orange;
+    color: orange;
+    box-shadow: 0 0 5px rgba(255, 165, 0, 2);
+    font-weight: 500;
 }
